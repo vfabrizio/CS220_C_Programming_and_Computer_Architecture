@@ -1,0 +1,8 @@
+#hello
+
+student {
+	age = bob
+	gpa = 3.8
+	sex = Alien
+	name = billy
+}
