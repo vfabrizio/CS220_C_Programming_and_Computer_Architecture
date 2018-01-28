@@ -1,0 +1,32 @@
+part 3
+5. the size of good_struct is so much smaller than bad_struct because gs has a short, a short, and a long, while bs has a shor, a long and a short. the stack has to fill the gap in the memory so that each element of the struct will have its own place in memory and won't take two reads to get the data. the padding causes the size to increase for bs
+
+part 4
+8. 
+Size of u: 8
+Address of u.c: 0x7ffff569db78
+Address of u.i: 0x7ffff569db78
+Address of u.l: 0x7ffff569db78
+34165590585603663
+Size of u: 8
+c: � l: 94053106624765 i: 1912776957 &u.l: ��r�U
+
+printf is interpreting the data stored in the union as a long because it is the largest sized element of the union. so when you print each element you get that long represented in the different forms. so the long is truncated to fit the int and it is represented in the different string or character forms.
+
+part 5
+4.
+for x[10] 
+Size of x: 40
+Size of x from foo: 8
+for x[20]
+Size of x: 80
+Size of x from foo: 8
+for x[30]
+Size of x: 120
+Size of x from foo: 8
+
+6.
+the size returned from foo is much smaller because it is telling you the size of the pointer to the array instead of telling you the size of the array. when you pass in the array it isnt looking at the array, it uses the pointer to the array
+
+
+

@@ -1,0 +1,47 @@
+1: secret 1: 0xdeadbeef
+   secret 2: 0xdeadc0de
+   secret 3: 0xbadc0de5
+   secret 4: 0xbadbeef5
+
+2: Address gfoo: 0x555555755040
+	   sfoo: 0x5555557551f4
+           lfoo: 0x5555555546d0
+           dfoo: 0x5555555546db
+
+3: value at dfoo: 0xbadbeef5
+		  -93824994332128
+
+
+4: start heap: 0x555555756000
+   end heap: 0x555555756000
+
+   start stack: 0x7ffffffde000
+   end stack: 0x7ffffffff000
+
+   start data: 0x0000555555755020
+   end data: 0x00005555557551f0
+
+part 4:
+
+global_vars
+x=10 size=11104
+x=100 size=11216
+x=1000 size=12120
+x=10000 size=21120
+
+malloc_vars
+x=10 size=11048
+x=100 size=11048
+x=1000 size=11048
+x=10000 size=11048
+
+malloc_limits
+max bytes: 4 bytes
+heap at main: 0x7ffffffde000
+heap after main: 0x7ffffffff000
+
+static_vars
+x=10 size=10904
+x=100 size=10904
+x=1000 size=10920
+x=10000 size=10920

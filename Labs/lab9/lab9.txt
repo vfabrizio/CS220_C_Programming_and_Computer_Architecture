@@ -1,0 +1,34 @@
+4:
+HDD ACCESS:  4 sec, 566571 micro sec
+
+32:
+HDD ACCESS:  0 sec, 604879 micro sec
+
+128:
+HDD ACCESS:  0 sec, 205598 micro sec
+
+1024:
+HDD ACCESS:  0 sec, 040851 micro sec
+
+getconf PAGESIZE:
+4096
+
+The perf tool offers a rich set of commands to collect and analyze performance and trace data. The command line usage is reminiscent of git in that there is a generic tool, perf, which implements a set of commands
+perf stat can run a command and gather performance counter statistics
+
+1:
+MEM SERIAL ACCESS:  0 sec, 005883 micro sec
+MEM PAGE STEP ACCESS:  0 sec, 017688 micro sec
+
+4:
+MEM SERIAL ACCESS:  0 sec, 022730 micro sec
+MEM PAGE STEP ACCESS:  0 sec, 059175 micro sec
+
+32:
+MEM SERIAL ACCESS:  0 sec, 114693 micro sec
+MEM PAGE STEP ACCESS:  0 sec, 563196 micro sec
+
+128:
+MEM SERIAL ACCESS:  0 sec, 371925 micro sec
+MEM PAGE STEP ACCESS:  2 sec, 112122 micro sec
+

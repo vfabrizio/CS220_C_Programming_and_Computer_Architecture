@@ -1,0 +1,12 @@
+#define BIT_CLEAR(v, mask) ( ~(v) |= (mask) )
+
+get functions:
+	page_offset = 0xd0
+	tlb_id = 0x7000
+	tlb_tag = 0x0
+
+set functions:
+  new addresses after changing:
+	page_offset = 0xf712c1a3
+	tlb_id = 0xf71280d0
+	tlb_tag = 0x8012c0d0

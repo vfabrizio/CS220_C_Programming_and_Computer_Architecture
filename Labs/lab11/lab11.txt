@@ -1,0 +1,64 @@
+fork()
+
+1) the order of the print statement varies because it is up to the operating system to call one or the other first. it is essentially random
+
+2) now the child goes first because it can finish its execution before the one  second delay finishes. it prints whichever is done executing first.
+
+3)pid = 6974
+  getpid = 6974
+  both the same value
+
+4)in child ppid = 6973
+  in parent ppid = 6394
+  
+5) x child = 2
+   x parent = 0
+   the decrement and increment occur at the same time so x doesnt have time to increment to 2 and then decrement back to 1. i think they occur at the same time when the processes immediately fork.
+   
+multifork()
+
+1)
+Line 1
+Line 2
+Line 1
+Line 2
+Line 4
+Line 2
+Line 4
+Line 3
+Line 3
+Line 4
+Line 2
+Line 3
+Line 4
+Line 3
+
+line 1 is printed 2 times becuase the parent prints it once and the child prints it once. it occurs before the second fork occurs so there is only one child and one parent
+line 2 is printed 4 times
+line 3 is printed 4 times
+line 4 is printed 4 times
+  for lines 2, 3, and 4 there are 4 processes going. the first fork creates a child and a parent and the second fork is called once on each of those. so it creates another child and parent for each.  that creates 4 processes so they each call lines 2, 3, and 4 once
+  
+2)
+7191: 6394: Line 1
+7191: 6394: Line 2
+7192: 7191: Line 1
+7191: 6394: Line 4
+7193: 7191: Line 2
+7194: 7191: Line 3
+7192: 7191: Line 2
+7195: 7192: Line 2
+7193: 7191: Line 4
+7192: 1: Line 4
+7197: 7192: Line 3
+7198: 7195: Line 3
+7196: 7193: Line 3
+7195: 7192: Line 4
+
+the parent processes died before the child finished executing (zombie process). the child had to be rerouted to init to finish executing.
+
+exec()
+
+Child pid = 7591, parent pid = 7590
+My pid is 7591, parent pid is  7590
+

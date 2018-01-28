@@ -1,0 +1,34 @@
+num_nodes: 10
+ASM:  0 sec, 000001 micro sec
+C:  0 sec, 000000 micro sec
+
+num_nodes: 100
+ASM:  0 sec, 000000 micro sec
+C:  0 sec, 000000 micro sec
+
+num_nodes: 1000
+ASM:  0 sec, 000000 micro sec
+C:  0 sec, 000000 micro sec
+
+num_nodes: 10000
+ASM:  0 sec, 000000 micro sec
+C:  0 sec, 000000 micro sec
+
+num_nodes: 100000
+ASM:  0 sec, 000000 micro sec
+C:  0 sec, 000001 micro sec
+
+num_nodes: 1000000
+ASM:  0 sec, 000000 micro sec
+C:  0 sec, 000000 micro sec
+
+ASM is faster because when you write out the assembly it is more efficiently written than the assembly created when the c file is converted to assembly
+Also because c uses a compiler and has to convert the code to machine code. but the assembly file is directly mapped to machine code
+
+c: 35 lines
+asm: 10 lines
+
+
+with -O2 flag
+c: 17 lines
+asm: 10 lines

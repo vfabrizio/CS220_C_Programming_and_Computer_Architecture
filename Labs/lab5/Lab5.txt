@@ -1,0 +1,25 @@
+output from running main_static:
+
+Allocating 40 bytes...
+Successfully allocated at 0x56527beee420
+free()ing memory at 0x56527beee420...DONE
+
+address of logger_malloc: 00000000000007a9
+address of logger_free: 000000000000080c
+
+run main_shared:
+
+./main_shared: error while loading shared libraries: libshared.so: cannot open shared object file: No such file or directory
+
+ldd main_shared
+
+	linux-vdso.so.1 (0x00007fffd7366000)
+	libshared.so => /home/vfabriz1/cs220/lab5/lib/libshared.so (0x00007f669e0e3000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f669dd18000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000564cd6840000)
+
+ldd main_static
+
+	linux-vdso.so.1 (0x00007ffd48ba9000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7719433000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000559dea316000)

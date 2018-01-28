@@ -1,0 +1,22 @@
+1. for: 503,040,629 iterations
+1.987911 seconds
+   while: 453,829,641
+2.203470 seconds
+   do-while: 447,979,701
+2.232244 seconds
+
+2. for: 1.987911 seconds
+   while: 2.203470 seconds
+   do-while: 2.232244 seconds
+
+
+3. for: 12 instructions
+   while: 10 instruction
+   do-while: 9 instructions
+
+4. I think the for loop is the fastest because it adds to the counter instead of subtracting the inputted number. the counter is easier for the program to use because it is written into the code, instead of having to find the number inputted by the user.
+
+linux-vdso.so.1 (0x00007ffc38db6000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f86e6907000)
+	/lib64/ld-linux-x86-64.so.2 (0x000055863e19f000)
+
